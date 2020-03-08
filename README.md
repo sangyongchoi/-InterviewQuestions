@@ -1,5 +1,45 @@
 # -InterviewQuestions
 
+**Spring MVC의 동작방식**
+
+1. Servlet가 받은 요청을 HandlerMapping으로 넘어간다.
+
+2. HandlerMapping이 알맞은 Controller를 찾아간다.
+
+3. ViewResolver는 Controller에게 받은 View에 Model에 담겨있는 data를 이용하여 알맞은 페이지를 표현해준다.
+
+
+
+**DI란 무엇이고 왜 사용하는가** 
+
+객체간의 의존성을 외부에서 주입시켜 주는것이다. 의존성을 외부에서 주입받으면 모듈간의 결합도가 낮아져서 유연한 변경이 가능하게된다.
+
+
+
+**Bean의 생성과 사용이 어떠한 방식으로 이루어집니까?**
+
+Bean은 IoC 컨테이너에 등록된 객체를 뜻한다.
+
+실행시 ComponentScan에 의해 설정파일들을 읽어 BeanFactory에 등록하게 됩니다.
+
+사용시 getBean을 통하여 컨테이너에 등록되어 있는 객체를 가져오게됩니다.
+
+...(추후 자세하게 수정할 예정)
+
+
+
+**빌더패턴이란 무엇입니까?**
+
+**- 답 준비중**
+
+
+
+**싱글톤패턴이란?**
+
+**- 답 준비중**
+
+
+
 **Spirng Boot란 무엇입니까 ?**
 
 제품수준의 Spring기반 Application을 만들수 있도록 도와준다. 
@@ -7,8 +47,7 @@
 기본적으로 제공해준다. 
 Spring개발을 할때 더 빠르고 폭넓은 사용성을 제공해주는것과 
 일일히 설정하지 않아도 설정되어져있는것들을 기본으로 제공해준다. 그러나 개발자가 쉽고 빠르게 원하는대로 바꿀 수 있다. 
-security같은 다양한 기능을 제공해주며 더이상 xml설정과 code generation을 하지않는다.**
-**
+security같은 다양한 기능을 제공해주며 더이상 xml설정과 code generation을 하지않는다.
 
 
 
